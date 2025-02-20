@@ -28,7 +28,7 @@ jobs :
         run : echo "ini step deploy"
 
       - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v1.2.1
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}

@@ -35,5 +35,8 @@ jobs :
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            whoami
+            sudo rm -rf /var/www/html/*
+            sudo rm -rf /var/www/html/.git
+            sudo rm -rf /var/www/html/.github
+            sudo gitclone https://github.com/lazuto123/HeroBiz /var/www/html
                      

@@ -35,7 +35,5 @@ jobs :
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            sudo rm -rf /var/www/html/*
-            sudo rm -rf /var/www/html/.git
-            sudo rm -rf /var/www/html/.git
+            whoami
                      

@@ -18,7 +18,7 @@ jobs :
       - name : menampilkan test
         run : echo "ini step test"
    
-   deployment :
+  deployment :
     name : deploy app
     runs-on : ubuntu-latest
     steps : 
